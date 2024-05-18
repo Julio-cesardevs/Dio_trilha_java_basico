@@ -1,18 +1,9 @@
-## Getting Started
+## Desafio Simulando Uma Conta Bancária Através Do Terminal/Console
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- eu tinha que cria uma simple cadastro local de criação de uma conta. onde o usuario digitava seu dados e recebia uma mensagem de confirmação.
+- tinha que usar o Scanner para que o usuário conseguisse digita no termianl os dados
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Tipo de erro.
+- logo quando eu rodava o sistema dava um erro de "Resource leak: 'scanner' is never closed".
+- Em Java, é uma boa prática fechar recursos que utilizam I/O, como Scanner, para liberar os recursos do sistema associados a ele.
+- Para corrigir este problema eu coloquei um scanner.close() no final da aplicação.
